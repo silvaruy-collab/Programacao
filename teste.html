@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <h1 onclick="draw()">CLIQUE AQUI</h1>
+<style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+<body>
+<canvas id="canvas" width="1890" height="700"></canvas>
+<script>
+      function draw() {
+        let x = Math.random() * 1900
+        let y = Math.random() * 600
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        
+        ctx.fillStyle = "rgb(0 0 200 / 50%)";
+        ctx.fillRect(x, y, 200, 200);
+      }
+      draw();
+    </script>
+</body>
+</html>
